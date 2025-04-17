@@ -66,14 +66,14 @@ https://github.com/user-attachments/assets/0c030756-f2a0-4a9d-81a2-99943a0f881f
   source activate evtexture && cd EvTexture && python setup.py develop
   ```
 ### Test
-1. Download the pretrained models from ([Releases](https://github.com/DachunKai/Ev-DeblurVSR/releases) / [Baidu Cloud](https://pan.baidu.com/s/161bfWZGVH1UBCCka93ImqQ?pwd=n8hg)(n8hg)) and place them to `experiments/pretrained_models/EvDeblurVSR/`. The network architecture code is in [evdeblurvsr_arch.py](https://github.com/DachunKai/EvTexture/blob/main/basicsr/archs/evdeblurvsr_arch.py).
+1. Download the pretrained models from ([Releases](https://github.com/DachunKai/Ev-DeblurVSR/releases) / [Baidu Cloud](https://pan.baidu.com/s/1Y4ZW9PDV_ff2Z4VxadzrzA?pwd=n8hg) (n8hg)) and place them to `experiments/pretrained_models/EvDeblurVSR/`. The network architecture code is in [evdeblurvsr_arch.py](https://github.com/DachunKai/EvTexture/blob/main/basicsr/archs/evdeblurvsr_arch.py).
     - Synthetic dataset model:
       * *EvDeblurVSR_GOPRO_BIx4.pth*: trained on [GoPro](https://seungjunnah.github.io/Datasets/gopro.html) dataset with Blur-Sharp pairs and BI degradation for $4\times$ SR scale.
       * *EvDeblurVSR_BSD_BIx4.pth*: trained on [BSD](https://github.com/zzh-tech/ESTRNN) dataset with Blur-Sharp pairs and BI degradation for $4\times$ SR scale.
     - Real-world dataset model:
       * *EvDeblurVSR_NCER_BIx4.pth*: trained on [NCER](https://sites.google.com/view/neid2023) dataset with Blur-Sharp pairs and BI degradation for $4\times$ SR scale.
 
-2. Download the preprocessed test sets (including events) for [GoPro](https://seungjunnah.github.io/Datasets/gopro.html), [BSD](https://github.com/zzh-tech/ESTRNN), and [NCER](https://sites.google.com/view/neid2023) from ([Releases](https://github.com/DachunKai/Ev-DeblurVSR/releases) / [Baidu Cloud](https://pan.baidu.com/s/161bfWZGVH1UBCCka93ImqQ?pwd=n8hg)(n8hg)), and place them to `datasets/`.
+2. Download the preprocessed test sets (including events) for [GoPro](https://seungjunnah.github.io/Datasets/gopro.html), [BSD](https://github.com/zzh-tech/ESTRNN), and [NCER](https://sites.google.com/view/neid2023) from ([Baidu Cloud](https://pan.baidu.com/s/1Y4ZW9PDV_ff2Z4VxadzrzA?pwd=n8hg) (n8hg) / [Google Drive](https://drive.google.com/drive/folders/1Py9uESwTAD0lhRgvhBGXo-uODxC-wGTw?usp=sharing)), and place them to `datasets/`.
     * *GoPro_h5*: HDF5 files containing preprocessed test datasets for the GoPro testset.
 
     * *BSD_h5*: HDF5 files containing preprocessed test datasets for the BSD dataset.
@@ -93,7 +93,7 @@ https://github.com/user-attachments/assets/0c030756-f2a0-4a9d-81a2-99943a0f881f
       ```bash
       ./scripts/dist_test.sh [num_gpus] options/test/EvDeblurVSR/test_EvDeblurVSR_NCER_x4.yml
       ```
-    This will generate the inference results in `results/`. The output results on GoPro, BSD and NCER datasets can be downloaded from ([Releases](https://github.com/DachunKai/EvTexture/releases) / [Baidu Cloud](https://pan.baidu.com/s/161bfWZGVH1UBCCka93ImqQ?pwd=n8hg)(n8hg)).
+    This will generate the inference results in `results/`. The output results on GoPro, BSD and NCER datasets can be downloaded from ([Releases](https://github.com/DachunKai/Ev-DeblurVSR/releases) / [Baidu Cloud](https://pan.baidu.com/s/1Y4ZW9PDV_ff2Z4VxadzrzA?pwd=n8hg) (n8hg)).
 
 4. Test the number of parameters, runtime, and FLOPs:
     ```bash

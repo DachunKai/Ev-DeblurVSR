@@ -66,7 +66,7 @@ https://github.com/user-attachments/assets/0c030756-f2a0-4a9d-81a2-99943a0f881f
   source activate evtexture && cd EvTexture && python setup.py develop
   ```
 ### Test
-1. Download the pretrained models from ([Releases](https://github.com/DachunKai/Ev-DeblurVSR/releases) / [Baidu Cloud](https://pan.baidu.com/s/1Y4ZW9PDV_ff2Z4VxadzrzA?pwd=n8hg) (n8hg)) and place them to `experiments/pretrained_models/EvDeblurVSR/`. The network architecture code is in [evdeblurvsr_arch.py](https://github.com/DachunKai/EvTexture/blob/main/basicsr/archs/evdeblurvsr_arch.py).
+1. Download the pretrained models from ([Releases](https://github.com/DachunKai/Ev-DeblurVSR/releases) / [Baidu Cloud](https://pan.baidu.com/s/1Y4ZW9PDV_ff2Z4VxadzrzA?pwd=n8hg) (n8hg)) and place them to `experiments/pretrained_models/EvDeblurVSR/`. The network architecture code is in [evdeblurvsr_arch.py](https://github.com/DachunKai/Ev-DeblurVSR/blob/main/basicsr/archs/evdeblurvsr_arch.py).
     - Synthetic dataset model:
       * *EvDeblurVSR_GOPRO_BIx4.pth*: trained on [GoPro](https://seungjunnah.github.io/Datasets/gopro.html) dataset with Blur-Sharp pairs and BI degradation for $4\times$ SR scale.
       * *EvDeblurVSR_BSD_BIx4.pth*: trained on [BSD](https://github.com/zzh-tech/ESTRNN) dataset with Blur-Sharp pairs and BI degradation for $4\times$ SR scale.
@@ -101,7 +101,7 @@ https://github.com/user-attachments/assets/0c030756-f2a0-4a9d-81a2-99943a0f881f
     ```
 
 ### Input Data Structure
-* Both video and event data are required as input, as shown in the [snippet](https://github.com/DachunKai/EvTexture/blob/main/basicsr/archs/evdeblurvsr_arch.py#L229). We package each video and its event data into an [HDF5](https://docs.h5py.org/en/stable/quick.html#quick) file.
+* Both video and event data are required as input, as shown in the [snippet](https://github.com/DachunKai/Ev-DeblurVSR/blob/main/basicsr/archs/evdeblurvsr_arch.py#L229). We package each video and its event data into an [HDF5](https://docs.h5py.org/en/stable/quick.html#quick) file.
 
 * Example: The structure of `GOPR0384_11_00.h5` file from the GoPro dataset is shown below.
 

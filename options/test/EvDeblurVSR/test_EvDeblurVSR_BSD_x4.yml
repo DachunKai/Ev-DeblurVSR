@@ -1,0 +1,46 @@
+name: EvDeblurVSR_BSD_BIx4
+model_type: EvBlurVSRModel
+scale: 4
+num_gpu: auto  # set num_gpu: 0 for cpu mode
+manual_seed: 0
+
+datasets:
+  test:
+    name: BSD_Test
+    type: EvBlurVSRTestDataset
+    dataroot_gt: datasets/BSD/BSD_voxels/Voxel_5/GT/test
+    dataroot_lq: datasets/BSD/BSD_voxels/Voxel_5/BlurLRx4/test
+    meta_info_file: basicsr/data/meta_info/meta_info_BSD_test.txt
+    io_backend:
+      type: hdf5
+
+# network structures
+network_g:
+  type: EvDeblurVSR
+  mid_channels: 64
+  num_blocks: 7
+  voxel_bins: 5
+
+# path
+path:
+  pretrain_network_g: experiments/pretrained_models/EvDeblurVSR/EvDeblurVSR_BSD_BIx4.pth
+  strict_load_g: true
+
+# validation settings
+val:
+  save_img: true
+  suffix: ~  # add suffix to saved images, if None, use exp name
+
+  metrics:
+    psnr: # metric name, can be arbitrary
+      type: calculate_psnr
+      crop_border: 0
+      test_y_channel: false
+    ssim:
+      type: calculate_ssim
+      crop_border: 0
+      test_y_channel: false
+    lpips:
+      type: calculate_lpips
+      crop_border: 0
+      test_y_channel: false

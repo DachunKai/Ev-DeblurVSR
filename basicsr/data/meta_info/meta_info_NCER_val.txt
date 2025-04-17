@@ -1,0 +1,16 @@
+bench_2.h5 30
+building_6.h5 30
+building_7.h5 30
+crosswalk_with_traffic_sign_2.h5 30
+flower_pots_on_the_stairs_2.h5 30
+gym_outer_wall_2.h5 30
+multi_floor_railing_2.h5 30
+parking_3.h5 30
+pond_2.h5 30
+repetitive_pattern_ceiling_2.h5 30
+rooftop_far_away_building_3.h5 30
+rooftop_far_away_building_4.h5 30
+sign_and_tree.h5 30
+smoking_room.h5 30
+statue_2.h5 30
+tree_2.h5 30

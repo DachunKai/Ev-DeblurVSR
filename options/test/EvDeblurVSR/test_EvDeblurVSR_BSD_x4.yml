@@ -8,8 +8,8 @@ datasets:
   test:
     name: BSD_Test
     type: EvBlurVSRTestDataset
-    dataroot_gt: datasets/BSD/BSD_voxels/Voxel_5/GT/test
-    dataroot_lq: datasets/BSD/BSD_voxels/Voxel_5/BlurLRx4/test
+    dataroot_gt: datasets/BSD_h5/GT/test
+    dataroot_lq: datasets/BSD_h5/BlurLRx4/test
     meta_info_file: basicsr/data/meta_info/meta_info_BSD_test.txt
     io_backend:
       type: hdf5

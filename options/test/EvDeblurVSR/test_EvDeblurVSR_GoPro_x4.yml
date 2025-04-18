@@ -8,8 +8,8 @@ datasets:
   test:
     name: GOPRO_Test
     type: EvBlurVSRTestDataset
-    dataroot_gt: datasets/GOPRO/gopro_voxels/Voxel_5/GT/test
-    dataroot_lq: datasets/GOPRO/gopro_voxels/Voxel_5/BlurLRx4/test
+    dataroot_gt: datasets/GoPro_h5/GT/test
+    dataroot_lq: datasets/GoPro_h5/BlurLRx4/test
     meta_info_file: basicsr/data/meta_info/meta_info_GOPRO_test.txt
     io_backend:
       type: hdf5

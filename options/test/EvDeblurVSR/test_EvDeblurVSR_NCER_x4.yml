@@ -8,8 +8,8 @@ datasets:
   test:
     name: NCER_Test
     type: EvBlurVSRTestDataset
-    dataroot_gt: datasets/NCER/NCER_F_voxels/Voxel_5/GT/test
-    dataroot_lq: datasets/NCER/NCER_F_voxels/Voxel_5/BlurLRx4/test
+    dataroot_gt: datasets/NCER_h5/GT/test
+    dataroot_lq: datasets/NCER_h5/BlurLRx4/test
     meta_info_file: basicsr/data/meta_info/meta_info_NCER_test.txt
     io_backend:
       type: hdf5

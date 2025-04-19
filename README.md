@@ -3,7 +3,7 @@
 Official Pytorch implementation for the "Event-Enhanced Blurry Video Super-Resolution" paper (AAAI 2025).
 
 <p align="center">
-    🌐 <a href="https://dachunkai.github.io/ev-deblurvsr.github.io/" target="_blank">Project</a> | 📃 <a href="https://ojs.aaai.org/index.php/AAAI/article/view/32438" target="_blank">Paper</a>  <br>
+    🌐 <a href="https://dachunkai.github.io/ev-deblurvsr.github.io/" target="_blank">Project</a> | 📃 <a href="https://arxiv.org/pdf/2504.13042" target="_blank">Paper</a>  <br>
 </p>
 
 **Authors**: [Dachun Kai](https://github.com/DachunKai/)<sup>[:email:️](mailto:dachunkai@mail.ustc.edu.cn)</sup>, [Yueyi Zhang](https://scholar.google.com.hk/citations?user=LatWlFAAAAAJ&hl=zh-CN&oi=ao), [Jin Wang](https://github.com/booker-max), [Zeyu Xiao](https://dblp.org/pid/276/3139.html), [Zhiwei Xiong](https://scholar.google.com/citations?user=Snl0HPEAAAAJ&hl=zh-CN), [Xiaoyan Sun](https://scholar.google.com/citations?user=VRG3dw4AAAAJ&hl=zh-CN), *University of Science and Technology of China*

@@ -16,7 +16,7 @@ Official Pytorch implementation for the "Event-Enhanced Blurry Video Super-Resol
 - [x] 2024/12/15: Initialize the repository
 - [x] 2024/12/09: :tada: :tada: Our paper was accepted in AAAI'2025
 
-## :bookmark: Table of Content
+## :bookmark: Table of Contents
 1. [Video Demos](#video-demos)
 2. [Code](#code)
 3. [Citation](#citation)
@@ -38,7 +38,7 @@ https://github.com/user-attachments/assets/0c030756-f2a0-4a9d-81a2-99943a0f881f
 ### Installation
 * Dependencies: [Miniconda](https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh), [CUDA Toolkit 11.1.1](https://developer.nvidia.com/cuda-11.1.1-download-archive), [torch 1.10.2+cu111](https://download.pytorch.org/whl/cu111/torch-1.10.2%2Bcu111-cp37-cp37m-linux_x86_64.whl), and [torchvision 0.11.3+cu111](https://download.pytorch.org/whl/cu111/torchvision-0.11.3%2Bcu111-cp37-cp37m-linux_x86_64.whl).
 
-* Run in Conda (**Recommend**)
+* Run in Conda (**Recommended**)
 
     ```bash
     conda create -y -n ev-deblurvsr python=3.7
@@ -61,7 +61,7 @@ https://github.com/user-attachments/assets/0c030756-f2a0-4a9d-81a2-99943a0f881f
   ```bash
   cd EvTexture && docker build -t evtexture ./docker
   ```
-  The pulled or self-built Docker image containes a complete conda environment named `evtexture`. After running the image, you can mount your data and operate within this environment.
+  The pulled or self-built Docker image contains a complete conda environment named `evtexture`. After running the image, you can mount your data and operate within this environment.
   ```bash
   source activate evtexture && cd EvTexture && python setup.py develop
   ```
@@ -74,7 +74,7 @@ https://github.com/user-attachments/assets/0c030756-f2a0-4a9d-81a2-99943a0f881f
       * *EvDeblurVSR_NCER_BIx4.pth*: trained on [NCER](https://sites.google.com/view/neid2023) dataset with Blur-Sharp pairs and BI degradation for $4\times$ SR scale.
 
 2. Download the preprocessed test sets (including events) for [GoPro](https://seungjunnah.github.io/Datasets/gopro.html), [BSD](https://github.com/zzh-tech/ESTRNN), and [NCER](https://sites.google.com/view/neid2023) from ([Baidu Cloud](https://pan.baidu.com/s/1Y4ZW9PDV_ff2Z4VxadzrzA?pwd=n8hg) (n8hg) / [Google Drive](https://drive.google.com/drive/folders/1Py9uESwTAD0lhRgvhBGXo-uODxC-wGTw?usp=sharing)), and place them to `datasets/`.
-    * *GoPro_h5*: HDF5 files containing preprocessed test datasets for the GoPro testset.
+    * *GoPro_h5*: HDF5 files containing preprocessed test datasets for the GoPro test set.
 
     * *BSD_h5*: HDF5 files containing preprocessed test datasets for the BSD dataset.
 

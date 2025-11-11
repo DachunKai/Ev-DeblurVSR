@@ -30,7 +30,7 @@ class EvBlurVSRTestDataset(data.Dataset):
             raise ValueError(f"We don't realize {self.io_backend_opt['type']} backend")
 
         logger = get_root_logger()
-        logger.info(f'Generate data info for BlurAlignTestDataset - {opt["name"]}')
+        logger.info(f'Generate data info for EvBlurVSRTestDataset - {opt["name"]}')
 
         if 'meta_info_file' in opt:
             with open(opt['meta_info_file'], 'r') as fin:
